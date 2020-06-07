@@ -6,8 +6,8 @@
     "yarn": "1.15.2"
   },
   "scripts": {
-    "build": "yarn --cwd web install && yarn --cwd web build",
-    "deploy": "cp -a web/build/. public/",
+    "build": "yarn --cwd client install && yarn --cwd client build",
+    "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   }
 }
