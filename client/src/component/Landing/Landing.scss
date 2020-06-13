@@ -1,0 +1,20 @@
+.Landing {
+  &__navigation {
+    border: 1px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 2px;
+    padding: 15px;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+}
