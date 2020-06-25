@@ -1,7 +1,7 @@
 import React from "react";
-import "./Weather.scss";
+import "./Timer.scss";
 
-class Weather extends React.Component {
+class Timer extends React.Component {
   constructor() {
     super();
     let d = new Date();
@@ -24,7 +24,7 @@ class Weather extends React.Component {
       time: d.toLocaleTimeString(),
     });
   }
-  componentWillMount() {
+  componentDidMount() {
     setInterval(this.countingSecond, 1000);
   }
   render() {
@@ -53,7 +53,7 @@ class Weather extends React.Component {
     return (
       <div className="timeclock-main">
         <h3 className="timeclock-text">
-          {days[this.state.day]}, {months[this.state.month]} {this.state.date},{" "}
+          {days[this.state.day]}, {months[this.state.month]} {this.state.date},
           {this.state.year} {this.state.time}
         </h3>
       </div>
@@ -61,4 +61,4 @@ class Weather extends React.Component {
   }
 }
 
-export default Weather;
+export default Timer;

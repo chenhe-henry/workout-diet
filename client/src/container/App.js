@@ -2,8 +2,10 @@ import React from "react";
 import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 
+import Header from "../component/Header/Header";
 import Landing from "../component/Landing/Landing";
-import HomePage from "../pages/HomePage/HomePage";
+import Workout from "../component/Workout/Workout";
+import Analysis from "../component/Analysis/Analysis";
 
 class App extends React.Component {
   state = {};
@@ -12,8 +14,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>{this.props.appName}</h1>
-        <HomePage />
-        <Switch></Switch>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/workout" component={Workout} />
+          <Route exact path="/analysis" component={Analysis} />
+        </Switch>
       </div>
     );
   }

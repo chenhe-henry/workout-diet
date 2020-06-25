@@ -1,20 +1,25 @@
 .Landing {
-  &__navigation {
-    border: 1px solid black;
-    border-radius: 3px;
-    display: inline-block;
-    margin: 2px;
-    padding: 15px;
-    &:hover {
-      transform: translateY(-5px);
+  &-comingSoon {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: justify;
+    &:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      animation: ellipsis 2s infinite;
+      content: "...";
     }
-    &:active {
-      transform: translateY(0);
+    @keyframes ellipsis {
+      from {
+        width: 2px;
+      }
+      to {
+        width: 30px;
+      }
     }
-  }
-
-  &__link {
-    text-decoration: none;
-    color: black;
   }
 }

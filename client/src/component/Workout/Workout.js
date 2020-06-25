@@ -1,10 +1,10 @@
 import React from "react";
 import "./Workout.scss";
 
-const Workout = ({ style, title }) => (
-  <button style={style} className="Workout__link ">
-    {title}
-  </button>
+const Workout = () => (
+  <div className="Workout">
+    <h1>This is workout page</h1>
+  </div>
 );
 
 export default Workout;
