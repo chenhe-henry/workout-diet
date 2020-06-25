@@ -3,6 +3,7 @@ import "./HomePage.scss";
 import { NavLink } from "react-router-dom";
 
 import Workout from "../../component/Workout/Workout";
+import Weather from "../../component/Weather/Weather";
 
 const HomePage = (props) => {
   const style = {
@@ -23,6 +24,7 @@ const HomePage = (props) => {
       <NavLink to="/workout" activeClassName="current__link">
         <Workout title="Workout" style={style} />
       </NavLink>
+      <Weather />
     </Fragment>
   );
 };
