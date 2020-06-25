@@ -1,0 +1,23 @@
+.HomePage {
+  &__link {
+    border: 1px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 2px;
+    padding: 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+.current__link button {
+  background-color: aqua;
+  font-weight: bold;
+}

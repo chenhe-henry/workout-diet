@@ -20,8 +20,6 @@ const Landing = (props) => {
       <Link to="/workout" className="Landing__link">
         <Workout title="Workout" style={style} />
       </Link>
-      <h2 className="Landing__navigation">Nutrition Analysis</h2>
-      <h2 className="Landing__navigation">Nutrition Analysis</h2>
     </Fragment>
   );
 };
